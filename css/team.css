@@ -1,0 +1,121 @@
+@import "reset.css";
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  box-sizing: border-box;
+}
+
+.team {
+  background: #000;
+  color: #fff;
+  font-family:'Montserrat' ,sans-serif;
+  width: 80vw;
+  padding: 10vw;
+}
+.team__h {
+  font-size: 10vw;
+  margin-bottom: 11vw;
+}
+.team__card {
+  margin-bottom: 7vw;
+}
+.team__card__photo {
+  width: 80vw;
+  height: 80vw;
+  border-radius: 50%;
+  margin-bottom: 7vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+.george {
+  background: url(../img/george.svg);
+  background-size: 100%;
+}
+.vlad {
+  background: url(../img/vlad.svg);
+  background-size: 100%;
+}
+.arsenii{
+  background: url(../img/arsenii.svg);
+  background-size: 100%;
+}
+.nastya{
+  background: url(../img/nastya.svg);
+  background-size: 100%;
+}
+.team__card__photo__name {
+  font-size: 7vw;
+  margin-bottom: 0.8vw;
+}
+.team__card__photo__inst {
+  font-size: 4.5vw;
+}
+.team__card__works {
+  font-size: 5.2vw;
+}
+
+/* Адаптив на планшеты */
+
+@media (min-width: 768px) {
+  .team__h {
+    font-size: 8vw;
+    margin-bottom: 8vw;
+  }
+  .team__card {
+    width: 34vw;
+    display: inline-block;
+    margin: 0 2.8vw 7vw;
+  }
+  .team__card__photo {
+    width: 34vw;
+    height: 34vw;
+    margin-bottom: 3.5vw;
+  }
+  .team__card__photo__name {
+    font-size: 4.5vw;
+    margin-bottom: 0.8vw;
+  }
+  .team__card__photo__inst {
+    font-size: 2.8vw;
+  }
+  .team__card__works {
+    font-size: 3.6vw;
+  }
+}
+
+/* Адаптив под компы */
+@media (min-width: 1280px) {
+  .team {
+    width: 90vw;
+    padding: 5vw;
+  }
+  .team__h {
+    font-size: 5.5vw;
+    margin-bottom: 6vw;
+  }
+  .team__card {
+    width: 16vw;
+    display: inline-block;
+    margin: 0 2.8vw 2vw;
+  }
+  .team__card__photo {
+    width: 16vw;
+    height: 16vw;
+    margin-bottom: 1.5vw;
+  }
+  .team__card__photo__name {
+    font-size: 2vw;
+    margin-bottom: 0.2vw;
+  }
+  .team__card__photo__inst {
+    font-size: 1.3vw;
+  }
+  .team__card__works {
+    font-size: 1.7vw;
+  }
+}
